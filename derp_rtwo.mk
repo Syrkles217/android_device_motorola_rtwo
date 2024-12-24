@@ -14,6 +14,9 @@ $(call inherit-product, device/motorola/rtwo/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
+DERP_VERSION_APPEND_TIME_OF_DAY=true
+DERP_BUILDTYPE := Official
+
 PRODUCT_NAME := derp_rtwo
 PRODUCT_DEVICE := rtwo
 PRODUCT_MANUFACTURER := motorola
