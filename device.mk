@@ -88,6 +88,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.rtwo
 
+# Quick Tap
+PRODUCT_PACKAGES += \
+    ColumbusService
+
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.rtwo
