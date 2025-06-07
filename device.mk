@@ -87,10 +87,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-rtwo-game-perf.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-rtwo.conf
 
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.rtwo
-
 # PowerShare
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare-service.default
@@ -99,6 +95,12 @@ $(call soong_config_set,lineage_powershare,powershare_path,/sys/class/power_supp
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
+# Touch HAL
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch-service.motorola
+
+$(call soong_config_set, MOTOROLA_TOUCH, HIGH_TOUCH_POLLING_PATH, /sys/class/touchscreen/primary/interpolation)
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/motorola/rtwo/rtwo-vendor.mk)
