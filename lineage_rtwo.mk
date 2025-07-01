@@ -13,8 +13,11 @@ $(call inherit-product, device/motorola/rtwo/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_rtwo PRODUCT_DEVICE := rtwo PRODUCT_MANUFACTURER := motorola 
-PRODUCT_BRAND := motorola PRODUCT_MODEL := motorola edge 40 pro
+PRODUCT_NAME := lineage_rtwo 
+PRODUCT_DEVICE := rtwo 
+PRODUCT_MANUFACTURER := motorola 
+PRODUCT_BRAND := motorola 
+PRODUCT_MODEL := motorola edge 40 pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 PRODUCT_BUILD_PROP_OVERRIDES += \
