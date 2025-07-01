@@ -3,6 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
+
 DEVICE_PATH := device/motorola/rtwo
 
 # Inherit from motorola sm8550-common
