@@ -5,6 +5,8 @@
 
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
+PRODUCT_PROPERTY_OVERRIDES += disable_treble_sepolicy_tests=true
+
 DEVICE_PATH := device/motorola/rtwo
 
 # Inherit from motorola sm8550-common
